@@ -1,0 +1,206 @@
+KOMENDY GITgit 
+
+GŁÓWNY
+
+//Zad1/1
+git commit
+git commit
+
+//Zad1/2
+git branch bugFix
+git checkout bugFix
+
+//Zad1/3
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git merge bugFix
+
+//Zad1/4
+git checkout -b bugFix
+git commit
+git checkout main
+git commit
+git checkout bugFix
+git rebase main
+
+//Zad2/1
+git checkout c4
+
+//Zad2/2
+git checkout bugFix
+git checkout HEAD^
+
+//Zad2/3
+git checkout bugFix
+git branch -f bugFix HEAD~3
+git checkout main
+git checkout c6
+git checkout HEAD~3
+git branch -f main c6
+
+//Zad2/4
+git checkout local
+git reset HEAD~1
+git checkout pushed
+git revert HEAD
+
+//Zad3/1
+git checkout main
+git cherry-pick C3
+git cherry-pick C4
+git cherry-pick C7
+
+
+//Zad3/2
+git rebase -i HEAD~4
+
+
+//Zad4/1
+git checkout main
+git cherry-pick C4
+
+//Zad4/2
+git checkout main
+git checkout caption
+git rebase -i HEAD~2
+git commit --amend
+git checkout newImage
+git checkout main
+git checkout caption
+git rebase -i HEAD~2
+git checkout main
+git merge caption
+
+//Zad4/3
+git checkout main
+git cherry-pick C2
+git commit --amend
+git cherry-pick C3
+
+//Zad4/4
+git tag v0 c1
+git tag v1 c2
+git checkout HEAD~1
+
+//Zad4/5
+git describe main
+git describe side
+git describe bugFix
+git commit
+
+//Zad5/1
+git checkout bugFix
+git rebase main
+git checkout main
+git rebase c3'
+git checkout another
+git rebase main
+git checkout side
+git rebase c3'
+git checkout another
+git rebase side
+git checkout main
+git rebase another
+
+//Zad5/2
+git checkout main~^2~1
+git checkout -b bugWork
+git checkout main
+
+//Zad5/3
+git checkout one
+git cherry-pick c4
+git cherry-pick c3
+git cherry-pick c2
+git checkout two
+git cherry-pick c5
+git cherry-pick c4
+git cherry-pick c3
+git cherry-pick c2
+git checkout three
+git rebase c2
+
+
+ZDALNY
+
+//Zad1/1
+git clone
+
+//Zad1/2
+git commit
+git checkout o/main
+git commit
+
+//Zad1/3
+git fetch
+
+//Zad1/4
+git pull
+
+//Zad1/5
+git clone
+git fakeTeamwork 2
+git commit
+git pull
+
+
+//Zad1/6
+git commit
+git commit
+git push
+
+//Zad1/7
+git clone
+git fakeTeamwork
+git commit
+git pull --rebase
+git push
+
+//Zad1/8
+git branch feature
+git reset --hard o/main
+git checkout feature
+git push
+
+
+//Zad2/1
+git fetch
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+
+//Zad2/2
+git checkout main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
+
+//Zad2/3
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+
+//Zad2/4
+git push origin main
+git push origin foo
+
+//Zad2/5
+git push origin main^:foo
+git push origin foo:main
+
+//Zad2/6
+git fetch origin main^:foo
+git fetch origin foo:main
+git checkout foo
+git merge main
+
+//Zad2/7
+git push origin :foo
+git fetch origin :bar
